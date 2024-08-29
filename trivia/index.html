@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="part1">
+        <h2>Part 1: Multiple-Choice Question</h2>
+        <h3>What is the capital of France?</h3>
+        <button class="answer-button" onclick="checkAnswer(this, false)">London</button>
+        <button class="answer-button" onclick="checkAnswer(this, false)">Berlin</button>
+        <button class="answer-button" onclick="checkAnswer(this, true)">Paris</button>
+        <p id="feedback1"></p>
+    </div>
+
+    <div id="part2">
+        <h2>Part 2: Free Response Question</h2>
+        <h3>What is 5 + 3?</h3>
+        <input type="text" id="free-response" placeholder="Type your answer here">
+        <button onclick="checkFreeResponse()">Submit</button>
+        <p id="feedback2"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
